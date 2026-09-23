@@ -1,0 +1,18 @@
+services:
+  db:
+    image: mysql:8.4
+    container_name: horaire_eleve_db
+    environment:
+      MYSQL_DATABASE: horaire_eleve
+      MYSQL_USER: fischer
+      MYSQL_PASSWORD: adrian
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - db_data:/var/lib/mysql
+    restart: unless-stopped
+
+volumes:
+  db_data:

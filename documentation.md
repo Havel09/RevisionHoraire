@@ -10,3 +10,7 @@ J'étais malade.
 Il n'y avait pas cours.
 
 ## Jeudi 17 septembre 2026
+J'ai fais les fonctions de chaques pages puis j'ai fais presque entièrement l'api.
+
+## Jeudi 24 septembre 2026
+Rendu du projet, l'api a été terminée, le css ajouté et l'implémentation des fonctions dans l'html aussi puis passage à docker pour la base de données fais aussi.
