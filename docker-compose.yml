@@ -14,5 +14,14 @@ services:
       - db_data:/var/lib/mysql
     restart: unless-stopped
 
+  app:
+    build: .
+    depends_on:
+      - db
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8080:80"
+
 volumes:
-  db_data:
+  db_data:  
