@@ -1,0 +1,23 @@
+meta {
+  name: PUT modifier une classe
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8080/api/classes
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "id": 1,
+    "nom": "I.DA-P3A",
+    "annee_scolaire": "2027-2028"
+  }
+}

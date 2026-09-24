@@ -1,0 +1,22 @@
+meta {
+  name: POST creer un cours
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/api/cours
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nom": "Atelier Web 3e année S1",
+    "code": "AWEB3"
+  }
+}

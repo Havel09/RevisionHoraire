@@ -1,0 +1,27 @@
+meta {
+  name: PUT modifier un creneau
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8080/api/creneaux
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "id": 1,
+    "classe_id": 1,
+    "cours_id": 1,
+    "jour": "lundi",
+    "heure_debut": "13:30:00",
+    "heure_fin": "16:00:00",
+    "salle": "R105"
+  }
+}

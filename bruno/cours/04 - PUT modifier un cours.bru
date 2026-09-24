@@ -1,0 +1,23 @@
+meta {
+  name: PUT modifier un cours
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/api/cours
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "id": 1,
+    "nom": "Atelier Web 3e année S1 (modifié)",
+    "code": "AWEB3"
+  }
+}
